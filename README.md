@@ -7,6 +7,8 @@ Free no-tracking SEC filing fee calculator using the FY2026 filing fee rate:
 
 The tool runs entirely in the browser. It has no signup, cookies, analytics, beacons, external scripts, uploads, or browser storage.
 
+Live site: https://sec-filing-fee-calculator.vercel.app/
+
 Sources:
 
 - SEC filing fee rate: https://www.sec.gov/about/feeamt

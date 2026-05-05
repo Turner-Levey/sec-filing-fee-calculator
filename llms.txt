@@ -4,6 +4,7 @@
 
 Site: https://sec-filing-fee-calculator.vercel.app/
 Source: https://github.com/Turner-Levey/sec-filing-fee-calculator
+IndexNow key file: https://sec-filing-fee-calculator.vercel.app/4f2e8d9c6b7a4f3a9e1c0d8b6a2f4c1e.txt
 
 ## Tool
 
