@@ -9,6 +9,10 @@ The tool runs entirely in the browser. It has no signup, cookies, analytics, bea
 
 Live site: https://sec-filing-fee-calculator.vercel.app/
 
+![SEC Filing Fee Calculator preview](https://sec-filing-fee-calculator.vercel.app/og.svg)
+
+Directory listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
+
 Sources:
 
 - SEC filing fee rate: https://www.sec.gov/about/feeamt
