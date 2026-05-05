@@ -41,7 +41,9 @@ a {
 
 .panel,
 .notes,
-.privacy {
+.privacy,
+.examples,
+.faq {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -221,6 +223,14 @@ body[data-mode="shares"] .aggregate-field {
   gap: 10px;
 }
 
+.rate-note {
+  margin: 14px 0 0;
+  max-width: 76ch;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
 button {
   min-height: 44px;
   border: 0;
@@ -264,18 +274,56 @@ button:focus-visible {
 }
 
 .notes,
-.privacy {
+.privacy,
+.examples,
+.faq {
   padding: 18px;
 }
 
 .notes p,
-.privacy p {
+.privacy p,
+.faq p {
   margin-bottom: 0;
   color: var(--muted);
 }
 
-.notes p + p {
+.notes p + p,
+.faq h3 {
   margin-top: 10px;
+}
+
+.faq h3 {
+  margin-bottom: 5px;
+  font-size: 0.92rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+th,
+td {
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  text-align: right;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+th {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 @media (max-width: 760px) {

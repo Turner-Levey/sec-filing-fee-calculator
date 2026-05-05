@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SEC Filing Fee Calculator</title>
-    <meta name="description" content="Free no-tracking SEC filing fee calculator using the FY2026 $138.10 per $1,000,000 rate, with memo and EX-FILING-FEES row export.">
+    <meta name="description" content="Free no-tracking SEC filing fee calculator using the FY2026 $138.10 per $1,000,000 rate for 10/1/2025 to 9/30/2026, with memo and EX-FILING-FEES row export.">
     <meta name="robots" content="index,follow">
     <meta name="nologin-verified" content="sec-filing-fee-calculator-vercel-app">
     <link rel="canonical" href="https://sec-filing-fee-calculator.vercel.app/">
@@ -17,6 +17,55 @@
     <meta name="twitter:image" content="https://sec-filing-fee-calculator.vercel.app/og.svg">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "SEC Filing Fee Calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Any",
+            "url": "https://sec-filing-fee-calculator.vercel.app/",
+            "description": "Free no-tracking browser-only SEC filing fee worksheet using the FY2026 $138.10 per $1,000,000 filing fee rate.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What SEC filing fee rate does this calculator use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It uses the FY2026 SEC filing fee rate of $138.10 per $1,000,000, or 0.00013810 times the aggregate amount, for the 10/1/2025 to 9/30/2026 rate period."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this replace EDGAR or FEPT validation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. It is an informational worksheet for estimating and reviewing filing fees before checking EDGAR, FEPT, and the applicable filing instructions."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does this calculate Section 31 transaction fees?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. This page is focused on SEC filing fees tied to Sections 6(b), 13(e), and 14(g), not Section 31 transaction fees."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <main class="app">
@@ -25,7 +74,7 @@
           <div>
             <p class="eyebrow">Local-first SEC worksheet</p>
             <h1 id="page-title">SEC Filing Fee Calculator</h1>
-            <p class="lede">Estimate filing fees at the FY2026 SEC rate of $138.10 per $1,000,000. Calculations run only in this page.</p>
+            <p class="lede">Estimate filing fees at the FY2026 SEC rate of $138.10 per $1,000,000 for the 10/1/2025 to 9/30/2026 rate period. Calculations run only in this page.</p>
           </div>
           <div class="rate-badge" aria-label="Current SEC filing fee rate">
             <span>$138.10</span>
@@ -80,6 +129,7 @@
             <button type="button" id="copy-row">Copy fee row</button>
             <button type="button" id="download-csv">Download CSV</button>
           </div>
+          <p class="rate-note">Formula: aggregate amount x 0.00013810, less any fee offset entered here. Recheck the SEC rate page before filing, especially around October 1.</p>
         </form>
       </section>
 
@@ -88,14 +138,45 @@
           <span>Sources and listing</span>
           <a href="https://www.sec.gov/about/feeamt" rel="noreferrer">SEC current filing fee rate</a>
           <a href="https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-1" rel="noreferrer">FY2026 fee advisory</a>
+          <a href="https://www.sec.gov/submit-filings/edgar-filing-fees" rel="noreferrer">EDGAR filing fees</a>
           <a href="https://www.tinytooltown.com/tools/sec-filing-fee-calculator/" rel="noreferrer">Tiny Tool Town listing</a>
           <a href="https://nologin.tools/tool/sec-filing-fee-calculator-vercel-app/" rel="noreferrer">No-Login Tools listing</a>
           <a href="https://nologin.tools/badge/sec-filing-fee-calculator-vercel-app/" rel="noreferrer">No-Login Tools certificate</a>
         </div>
+        <div class="examples">
+          <h2>Common Amount Checks</h2>
+          <div class="table-wrap" role="region" aria-label="Common filing fee examples">
+            <table>
+              <thead>
+                <tr>
+                  <th>Aggregate amount</th>
+                  <th>Estimated fee</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>$1,000,000</td><td>$138.10</td></tr>
+                <tr><td>$10,000,000</td><td>$1,381.00</td></tr>
+                <tr><td>$50,000,000</td><td>$6,905.00</td></tr>
+                <tr><td>$100,000,000</td><td>$13,810.00</td></tr>
+                <tr><td>$250,000,000</td><td>$34,525.00</td></tr>
+                <tr><td>$500,000,000</td><td>$69,050.00</td></tr>
+                <tr><td>$1,000,000,000</td><td>$138,100.00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <div class="notes">
           <h2>Use Notes</h2>
           <p>The fee is calculated as aggregate amount x 0.00013810, then reduced by any offset you enter. Confirm the final amount in EDGAR, FEPT, and the applicable filing instructions before submitting.</p>
+          <p>Use the shares x price mode as a worksheet shortcut for internal review. This page does not determine filer category, transaction structure, or which filing fee table line applies.</p>
           <p>This is an informational worksheet, not legal advice, accounting advice, payment instruction, SEC affiliation, EDGAR validation, or an EDGAR filing service.</p>
+        </div>
+        <div class="faq">
+          <h2>FAQ</h2>
+          <h3>Is this the Section 31 transaction fee rate?</h3>
+          <p>No. This calculator is for SEC filing fees tied to Sections 6(b), 13(e), and 14(g). It is not a broker-dealer Section 31 transaction-fee calculator.</p>
+          <h3>Can I use this for an EX-FILING-FEES review row?</h3>
+          <p>Yes, the row export is a review aid for aggregate amount, fee rate, calculated fee, offset, and net fee. Confirm against the filing instructions before submitting.</p>
         </div>
         <div class="privacy">
           <h2>Privacy</h2>

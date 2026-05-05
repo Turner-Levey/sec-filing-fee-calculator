@@ -1,6 +1,6 @@
 # SEC Filing Fee Calculator
 
-> Free local-first, no-tracking SEC filing fee calculator using the FY2026 $138.10 per $1,000,000 filing fee rate.
+> Free local-first, no-tracking SEC filing fee calculator using the FY2026 $138.10 per $1,000,000 filing fee rate for 10/1/2025 to 9/30/2026.
 
 Site: https://sec-filing-fee-calculator.vercel.app/
 Source: https://github.com/Turner-Levey/sec-filing-fee-calculator
@@ -17,4 +17,5 @@ IndexNow key file: https://sec-filing-fee-calculator.vercel.app/4f2e8d9c6b7a4f3a
 
 - Runs entirely in the browser.
 - No signup, cookies, analytics, beacons, uploads, external scripts, or browser storage.
+- Includes common amount examples, rate-period wording, and FAQ structured data for rate, EDGAR/FEPT validation, and Section 31 transaction-fee boundaries.
 - Informational worksheet only; not legal advice, accounting advice, payment instruction, SEC affiliation, EDGAR validation, or an EDGAR filing service.
