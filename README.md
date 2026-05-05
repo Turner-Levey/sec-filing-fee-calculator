@@ -13,6 +13,10 @@ Live site: https://sec-filing-fee-calculator.vercel.app/
 
 Directory listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
 
+No-Login Tools listing: https://nologin.tools/tool/sec-filing-fee-calculator-vercel-app/
+
+No-Login Tools certificate: https://nologin.tools/badge/sec-filing-fee-calculator-vercel-app/
+
 Sources:
 
 - SEC filing fee rate: https://www.sec.gov/about/feeamt
