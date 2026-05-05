@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="SEC filing fee calculator preview">
+  <rect width="1200" height="630" fill="#eef2f7"/>
+  <rect x="72" y="72" width="1056" height="486" rx="24" fill="#ffffff" stroke="#cfd8e5" stroke-width="4"/>
+  <rect x="112" y="112" width="270" height="138" rx="16" fill="#e6f4f1" stroke="#9fd6ce" stroke-width="3"/>
+  <text x="136" y="166" fill="#115e59" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">FY2026 rate</text>
+  <text x="136" y="218" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="900">$138.10 / $1M</text>
+  <text x="112" y="342" fill="#142033" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="900">SEC Filing Fee Calculator</text>
+  <text x="114" y="410" fill="#526174" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">No signup. No tracking. Local browser worksheet.</text>
+  <rect x="796" y="140" width="248" height="300" rx="18" fill="#0f766e"/>
+  <rect x="828" y="178" width="184" height="224" rx="8" fill="#ecfeff"/>
+  <path d="M862 230h116M862 280h116M862 330h68" stroke="#0f766e" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="988" cy="374" r="58" fill="#f59e0b"/>
+  <path d="M988 337v74M951 374h74" stroke="#fff7ed" stroke-width="18" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEC Filing Fee Calculator</title>
+    <meta name="description" content="Free no-tracking SEC filing fee calculator using the FY2026 $138.10 per $1,000,000 rate, with memo and EX-FILING-FEES row export.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="https://sec-filing-fee-calculator.vercel.app/">
+    <meta property="og:title" content="SEC Filing Fee Calculator">
+    <meta property="og:description" content="Calculate FY2026 SEC filing fees locally in your browser. No signup, no tracking, no uploaded data.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sec-filing-fee-calculator.vercel.app/">
+    <meta property="og:image" content="https://sec-filing-fee-calculator.vercel.app/og.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://sec-filing-fee-calculator.vercel.app/og.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel tool-panel" aria-labelledby="page-title">
+        <div class="mast">
+          <div>
+            <p class="eyebrow">Local-first SEC worksheet</p>
+            <h1 id="page-title">SEC Filing Fee Calculator</h1>
+            <p class="lede">Estimate filing fees at the FY2026 SEC rate of $138.10 per $1,000,000. Calculations run only in this page.</p>
+          </div>
+          <div class="rate-badge" aria-label="Current SEC filing fee rate">
+            <span>$138.10</span>
+            <small>per $1,000,000</small>
+          </div>
+        </div>
+
+        <form class="calculator" id="fee-form">
+          <div class="mode-row" role="radiogroup" aria-label="Valuation mode">
+            <label class="mode-option">
+              <input type="radio" name="mode" value="aggregate" checked>
+              <span>Aggregate amount</span>
+            </label>
+            <label class="mode-option">
+              <input type="radio" name="mode" value="shares">
+              <span>Shares x price</span>
+            </label>
+          </div>
+
+          <div class="grid">
+            <label class="field aggregate-field">
+              <span>Aggregate offering or transaction amount</span>
+              <input id="aggregate" inputmode="decimal" autocomplete="off" value="100000000">
+            </label>
+            <label class="field shares-field">
+              <span>Shares or units</span>
+              <input id="shares" inputmode="decimal" autocomplete="off" value="1000000">
+            </label>
+            <label class="field shares-field">
+              <span>Price per share or unit</span>
+              <input id="price" inputmode="decimal" autocomplete="off" value="25">
+            </label>
+            <label class="field">
+              <span>Previously paid fee offset</span>
+              <input id="offset" inputmode="decimal" autocomplete="off" value="0">
+            </label>
+          </div>
+
+          <div class="result-band" aria-live="polite">
+            <div>
+              <span class="label">Calculated filing fee</span>
+              <strong id="fee">$13,810.00</strong>
+            </div>
+            <div>
+              <span class="label">Net after offset</span>
+              <strong id="net-fee">$13,810.00</strong>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="button" id="copy-memo">Copy memo</button>
+            <button type="button" id="copy-row">Copy fee row</button>
+            <button type="button" id="download-csv">Download CSV</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="support">
+        <div class="source-strip">
+          <span>Source rate</span>
+          <a href="https://www.sec.gov/about/feeamt" rel="noreferrer">SEC current filing fee rate</a>
+          <a href="https://www.sec.gov/rules-regulations/fee-rate-advisories/2026-1" rel="noreferrer">FY2026 fee advisory</a>
+        </div>
+        <div class="notes">
+          <h2>Use Notes</h2>
+          <p>The fee is calculated as aggregate amount x 0.00013810, then reduced by any offset you enter. Confirm the final amount in EDGAR, FEPT, and the applicable filing instructions before submitting.</p>
+          <p>This is an informational worksheet, not legal advice, accounting advice, payment instruction, SEC affiliation, EDGAR validation, or an EDGAR filing service.</p>
+        </div>
+        <div class="privacy">
+          <h2>Privacy</h2>
+          <p>No signup, cookies, analytics, beacons, external scripts, uploads, or browser storage. The page can be saved and run offline.</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

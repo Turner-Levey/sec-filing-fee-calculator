@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SEC fee calculator icon">
+  <rect width="64" height="64" rx="12" fill="#0f766e"/>
+  <path d="M17 18h30v28H17z" fill="#ecfeff"/>
+  <path d="M22 24h20M22 31h20M22 38h10" stroke="#0f766e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="43" cy="41" r="9" fill="#f59e0b"/>
+  <path d="M43 35v12M38 41h10" stroke="#fff7ed" stroke-width="3" stroke-linecap="round"/>
+</svg>
