@@ -4,6 +4,7 @@
 
 Site: https://sec-filing-fee-calculator.vercel.app/
 Source: https://github.com/Turner-Levey/sec-filing-fee-calculator
+Preview image: https://sec-filing-fee-calculator.vercel.app/preview.png
 Tiny Tool Town listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
 No-Login Tools listing: https://nologin.tools/tool/sec-filing-fee-calculator-vercel-app/
 No-Login Tools certificate: https://nologin.tools/badge/sec-filing-fee-calculator-vercel-app/

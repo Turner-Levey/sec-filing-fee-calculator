@@ -15,7 +15,7 @@ Useful checks now included on the page:
 
 Live site: https://sec-filing-fee-calculator.vercel.app/
 
-![SEC Filing Fee Calculator preview](https://sec-filing-fee-calculator.vercel.app/og.svg)
+![SEC Filing Fee Calculator preview](https://sec-filing-fee-calculator.vercel.app/preview.png)
 
 Directory listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
 
