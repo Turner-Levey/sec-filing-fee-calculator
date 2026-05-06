@@ -19,6 +19,8 @@ Live site: https://sec-filing-fee-calculator.vercel.app/
 
 Directory listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
 
+Awesome SEC Filings listing: https://github.com/vibeyclaw/awesome-sec-filings#general-sec-filings
+
 No-Login Tools listing: https://nologin.tools/tool/sec-filing-fee-calculator-vercel-app/
 
 No-Login Tools certificate: https://nologin.tools/badge/sec-filing-fee-calculator-vercel-app/
