@@ -15,6 +15,8 @@ Useful checks now included on the page:
 
 Live site: https://sec-filing-fee-calculator.vercel.app/
 
+Source: https://github.com/Turner-Levey/sec-filing-fee-calculator
+
 ![SEC Filing Fee Calculator preview](https://sec-filing-fee-calculator.vercel.app/preview.png)
 
 Directory listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
@@ -24,6 +26,11 @@ Awesome SEC Filings listing: https://github.com/vibeyclaw/awesome-sec-filings#ge
 No-Login Tools listing: https://nologin.tools/tool/sec-filing-fee-calculator-vercel-app/
 
 No-Login Tools certificate: https://nologin.tools/badge/sec-filing-fee-calculator-vercel-app/
+
+Related standalone SEC tools:
+
+- Schedule 13D / 13G Deadline Calculator: https://sec-13d-13g-deadline-calculator.vercel.app/
+- Form D Deadline Calculator: https://form-d-deadline-calculator.vercel.app/
 
 Sources:
 
