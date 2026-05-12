@@ -23,6 +23,8 @@ Directory listing: https://www.tinytooltown.com/tools/sec-filing-fee-calculator/
 
 Awesome SEC Filings listing: https://github.com/vibeyclaw/awesome-sec-filings#general-sec-filings
 
+Awesome Compliance listing: https://github.com/theopenlane/awesome-compliance#open-source-platforms
+
 No-Login Tools listing: https://nologin.tools/tool/sec-filing-fee-calculator-vercel-app/
 
 No-Login Tools certificate: https://nologin.tools/badge/sec-filing-fee-calculator-vercel-app/
